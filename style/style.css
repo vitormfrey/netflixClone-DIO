@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/* Estilo padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --red: #e50914;
+  --black: #141414;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: "Helvetica Neue", Helvetica;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: var(--black);
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Fim */
+
+.container {
+  margin: 0 60px;
+}
+
+/* Estilo Header */
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  transition: 0.3s ease all;
+}
+header .container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+}
+.titulo-logo {
+  color: var(--red);
+  font-size: 1.7em;
+  text-transform: uppercase;
+}
+.navbar a {
+  margin: 0 20px;
+  font-size: 1.2em;
+  color: #e0dfdf;
+}
+.navbar a:hover {
+  color: #fff;
+}
+.active {
+  background-color: rgba(0, 0, 0, 0.74);
+}
+/* Fim */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("https://www.themoviedb.org/t/p/original/6KclfESXQia4BbJNv4xUnBqaWfe.jpg")
+      no-repeat;
+  background-size: cover;
+  height: 480px;
+}
+.titulo-banner {
+  color: #f5f5f5;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  margin-top: 10%;
+}
+.banner .descricao {
+  color: #f5f5f5;
+  font-size: 1.3em;
+  margin-bottom: 40px;
+}
+
+.banner .container {
+  width: 60%;
+}
+.botao {
+  padding: 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: bold;
+  transition: 0.3s ease all;
+}
+.botao a {
+  color: var(--black);
+}
+
+.botao:nth-child(2) {
+  background-color: #383737b0;
+  margin-left: 10px;
+}
+.botao:nth-child(2) a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.botao:hover {
+  background: #c2c1c1;
+}
+.botao:hover:nth-child(2) {
+  background: #252525b0;
+}
+.botao i {
+  margin-right: 5px;
+}
+/* DivCard */
+.container-card {
+  margin: 0 0 0 60px;
+}
+.card-img {
+  height: 450px;
+  transition: 0.3s ease all;
+}
+
+.owl-item .item .card-img:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+/* Fim Card */
+.titulo {
+  margin: 15px;
+  font-size: 1.5em;
+  color: #f5f5f5;
+}
+#cardMovie {
+  margin-bottom: 5%;
+}
